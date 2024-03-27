@@ -1,0 +1,30 @@
+{
+  "name": "aws-synthetics-mock",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx -w Synthetics -w SyntheticsLogger tsc -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TANIGUCHI Kousuke",
+  "license": "ISC",
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "puppeteer": "=19.7.0",
+    "Synthetics": "./Synthetics",
+    "SyntheticsLogger": "./SyntheticsLogger"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.26",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "workspaces": [
+    "Synthetics",
+    "SyntheticsLogger",
+    "canaries"
+  ]
+}

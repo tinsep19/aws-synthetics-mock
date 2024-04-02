@@ -1,5 +1,5 @@
 {
-  "name": "aws-synthetics-mock",
+  "name": "@tinsep19/aws-synthetics-mock",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
